@@ -4,6 +4,18 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primary{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  background: #FF900E;
+  padding: 20px 25px;
+  border: 0;
+  cursor: pointer;
+  margin: 32px auto;
+}
 /* header styles */
 
 header{
@@ -43,23 +55,44 @@ nav li a {
 /* banner styles */
 
 .banner-content{
-  width: 800px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
 
 .banner > img{
-  width: 1440px;
-  height: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .banner-title{
   color:#131313;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
 }
 .banner-description{
   color:#727272;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
+}
+
+/* responsive media */
+
+@media screen and (max-width:576px) {
+  header{
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+  header{
+    padding: 50px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  
 }
